@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">FilMania</string>
+    <!-- menu -->
+    <string name="txtFavorite">Favorit</string>
+    <string name="txtSoon">Segera</string>
+    <string name="txtMovie">Film</string>
+    <string name="txtAbout">Tentang</string>
+    <string name="txtSearch">Cari</string>
+    <!-- film -->
+    <string name="txtTitle">Judul</string>
+    <!-- detail film-->
+    <string name="txtDetail">Judul</string>
+    <string name="txtDescription">Deskripsi</string>
+    <string name="txtReleaseDate">Tayang</string>
+    <string name="txtVote">7</string>
+    <string name="txtShare">Share</string>
+    <string name="txtMinute">menit</string>
+    <string name="txtTitlePlayer">Pemain Film</string>
+    <string name="txtTVote">Rating</string>
+    <string name="txtTCompany">Rumah Produksi</string>
+    <string name="rating_denominator">/10</string>
+    <string name="txtAs">Sebagai</string>
+    <!-- about -->
+    <string name="txtName">Andi Hakim Arif</string>
+    <string name="txtTwitter">Twitter : </string>
+    <string name="txtGithub">Github : </string>
+    <string name="txtSocial">\@andihaki </string>
+    <string name="txtWeb">busylessman.com</string>
+    
+    <!--movie_detail-->
+    <!-- Content descriptions for accessibility -->
+    <string name="content_desc_movie_poster">Movie poster</string>
+    <string name="content_desc_backdrop_image">Movie backdrop image</string>
+</resources>

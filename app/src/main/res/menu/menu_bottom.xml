@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itMovie"
+        android:enabled="true"
+        android:icon="@drawable/ic_movie"
+        android:title="@string/txtMovie"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/itFavorite"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/txtFavorite"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/itSoon"
+        android:enabled="true"
+        android:icon="@drawable/ic_soon"
+        android:title="@string/txtSoon"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/itSearch"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title="@string/txtSearch"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/itAbout"
+        android:enabled="true"
+        android:icon="@drawable/ic_about"
+        android:title="@string/txtAbout"
+        app:showAsAction="ifRoom"/>
+</menu>

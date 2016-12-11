@@ -1,0 +1,213 @@
+<ScrollView
+    android:id="@+id/scroll_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <RelativeLayout
+        android:id="@+id/scroll_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:paddingBottom="@dimen/margin_for_fab">
+
+        <ImageView
+            android:id="@+id/img_backdrops"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:contentDescription="@string/content_desc_backdrop_image"
+            tools:background="#ddd" />
+        <ImageView
+            android:id="@+id/iv_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/txt_titles"
+            android:layout_marginBottom="20dp"
+            android:tint="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/img_posters"
+            android:layout_width="@dimen/details_poster_width"
+            android:layout_height="@dimen/details_poster_height"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/details_poster_margin_top"
+            android:contentDescription="@string/content_desc_movie_poster"
+            tools:background="#ccc" />
+
+        <TextView
+            android:id="@+id/txt_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/llDetail"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_toEndOf="@id/img_posters"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:text="Spongebob Square Pants The Movie"
+            android:textColor="@color/white"
+            />
+
+        <LinearLayout
+            android:id="@+id/llDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_posters"
+            android:layout_above="@+id/rating_container">
+            <TextView
+                android:id="@+id/txt_release_dates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:layout_marginStart="@dimen/margin_large"
+                android:layout_marginTop="2dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                tools:text="2016"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/txt_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                tools:text="01H 30M"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtMinute"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/white"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:layout_gravity="bottom"
+                />
+            <TextView
+                android:id="@+id/txt_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                tools:text="Cartoon"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rating_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_toEndOf="@id/img_posters"
+            android:layout_below="@+id/img_backdrops"
+            android:clipChildren="false"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:clipToPadding="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/star_big_off"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/txt_votes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="?android:attr/textColorPrimary"
+                tools:text="7.3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_default"
+                android:text="@string/rating_denominator"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="?android:attr/textColorSecondary"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_descriptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_posters"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:lineSpacingMultiplier="@dimen/body_text_line_spacing"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text="Bikini bottom creatures : spongebob square pants, patric the star, sandy, kucing keong, tentacle."
+            />
+
+        <TextView
+            android:id="@+id/txt_titlePlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_descriptions"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            tools:text="Pemain Film"
+            android:text="@string/txtTitlePlayer"/>
+        <ScrollView
+            android:id="@+id/svPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_titlePlayer"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcvPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            </android.support.v7.widget.RecyclerView>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/txt_titleCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/svPlayer"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            tools:text="Rumah Produksi"
+            android:text="@string/txtTCompany"/>
+        <TextView
+            android:id="@+id/txt_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_titleCompany"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text="Nickelodeoon"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"/>
+
+    </RelativeLayout>
+
+</ScrollView>
